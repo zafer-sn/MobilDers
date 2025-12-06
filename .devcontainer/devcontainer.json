@@ -5,8 +5,8 @@
     "vscode": {
       "settings": {},
       "extensions": [
-        "fwcd.kotlin",
-        "mathjang.vscode-kotlin",
+        //"fwcd.kotlin",
+        //"mathjang.vscode-kotlin",
         "vscjava.vscode-java-pack"
       ]
     }
