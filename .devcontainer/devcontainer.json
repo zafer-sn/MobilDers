@@ -1,15 +1,19 @@
 {
   "name": "Mobil Ders Ortamı",
   "image": "mcr.microsoft.com/devcontainers/java:17",
+  "remoteEnv": {
+    "JAVA_HOME": "/usr/lib/jvm/msopenjdk-current" 
+  },
   "customizations": {
     "vscode": {
       "settings": {},
       "extensions": [
-        //"fwcd.kotlin",
+        "fwcd.kotlin",
         //"mathjang.vscode-kotlin",
         "vscjava.vscode-java-pack"
       ]
     }
   },
-  "postCreateCommand": "chmod +x gradlew && sudo mkdir -p /usr/local/sdkman/candidates/java && sudo ln -sfn /usr/lib/jvm/msopenjdk-current /usr/local/sdkman/candidates/java/current && wget https://download-cdn.jetbrains.com/kotlin-lsp/0.253.10629/kotlin-0.253.10629.vsix -O kotlin.vsix && code --install-extension /workspaces/MobilDers/kotlin.vsix && rm /workspaces/MobilDers/kotlin.vsix"
+  "postCreateCommand": "chmod +x gradlew"
+  //"postCreateCommand": "chmod +x gradlew && sudo mkdir -p /usr/local/sdkman/candidates/java && sudo ln -sfn /usr/lib/jvm/msopenjdk-current /usr/local/sdkman/candidates/java/current && wget https://download-cdn.jetbrains.com/kotlin-lsp/0.253.10629/kotlin-0.253.10629.vsix -O kotlin.vsix && code --install-extension /workspaces/MobilDers/kotlin.vsix && rm /workspaces/MobilDers/kotlin.vsix"
 }
