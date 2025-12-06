@@ -11,5 +11,5 @@
       ]
     }
   },
-  "postCreateCommand": "get https://download-cdn.jetbrains.com/kotlin-lsp/0.253.10629/kotlin-0.253.10629.vsix -O kotlin.vsix && code --install-extension kotlin.vsix && rm kotlin.vsix && chmod +x gradlew && sudo mkdir -p /usr/local/sdkman/candidates/java && sudo ln -sfn /usr/lib/jvm/msopenjdk-current /usr/local/sdkman/candidates/java/current"
+  "postCreateCommand": "wget https://download-cdn.jetbrains.com/kotlin-lsp/0.253.10629/kotlin-0.253.10629.vsix -O kotlin.vsix && code --install-extension kotlin.vsix && rm kotlin.vsix && chmod +x gradlew && sudo mkdir -p /usr/local/sdkman/candidates/java && sudo ln -sfn /usr/lib/jvm/msopenjdk-current /usr/local/sdkman/candidates/java/current"
 }
