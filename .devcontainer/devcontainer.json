@@ -11,5 +11,5 @@
       ]
     }
   },
-  "postCreateCommand": "chmod +x gradlew"
+  "postCreateCommand": "chmod +x gradlew && sudo mkdir -p /usr/local/sdkman/candidates/java && sudo ln -sfn /usr/lib/jvm/msopenjdk-current /usr/local/sdkman/candidates/java/current"
 }
