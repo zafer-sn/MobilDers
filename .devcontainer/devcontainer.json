@@ -4,7 +4,10 @@
   
   "customizations": {
     "vscode": {
-      "settings": {},
+      "settings": {
+        "kotlin.diagnostics.debounceTime": 600000, 
+        "editor.formatOnSave": true
+      },
       "extensions": [
         "fwcd.kotlin",
         //"mathjang.vscode-kotlin",
