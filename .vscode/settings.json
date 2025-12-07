@@ -1,0 +1,7 @@
+{
+  "kotlin.languageServer.enabled": true,
+  "kotlin.languageServer.diagnostics": false,
+  "[kotlin]": {
+    "editor.semanticHighlighting.enabled": false
+  }
+}
